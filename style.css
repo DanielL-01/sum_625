@@ -5,58 +5,85 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    color: white;
+    margin: 5.5rem;
+    background-image: url("./background.svg");
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 #part-1{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffba42;
 }
 
 #part-1 h1{
     margin: 0.1rem;
+    
 }
 
 #part-1 h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border:1px solid #ffba42;
+    background-color: #00507567;
     margin: 0.1rem;
+    width: 120px;
 }
 
 #part-2{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 1rem;
 }
 
 table {
-    
     border-collapse: collapse;
-
+    border-style: hidden;
+    background-color: #00121a67;
+    border-radius: 10px;
     /*Remove all the outside
     borders of the existing table*/
 }
 table td {
     padding: 0.3rem 0.5rem;
-    border: 2px solid black;
+    text-align: center;
+    border: 1px #ffba42;
+    border-style: solid;
+    font-size: 12px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 #form {
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 10%;
     text-align: center;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
     display: flex;
     
     height: 15vh;
-    width:  50vh;
+    width:  25vw;
     text-align: center;
-    font-size: 10vh;
+    font-size: 5rem;
     border: hidden;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #f5a201;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
     
 
 }
@@ -64,12 +91,13 @@ input {
 button {
     margin-top: 3vh;
     height: 7vh;
-    background-color: rgb(255, 0, 0);
+    width: 25vw;
+    background-color: #f5a201;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5vh;
     font-weight: 700;
-    border: 5px solid black;
+    border: 5px solid #f5a201;
     border-radius: 3vh;
 }
 
@@ -86,8 +114,21 @@ button {
 @media screen and (max-width: 1000px) {
     #part-2 {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
     }
-    button {
-        width: 50vh;
+
+    #form {
+        width: 50vw;
+        margin: 4rem;
     }
+    input{
+        width: 50vw;
+        font-size: 3rem;
+    }
+
+  
+
+  
 }

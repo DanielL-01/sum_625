@@ -6,10 +6,10 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     color: white;
-    margin: 5.5rem;
     background-image: url("./background.svg");
     background-repeat: repeat;
     background-size: cover;
+    background-color: #013c58;
 }
 
 #part-1{
@@ -40,14 +40,23 @@ body{
 #part-2{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
-    margin-top: 1rem;
+    margin-top: 40px;
+
+}
+
+#table{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 table {
     border-collapse: collapse;
     border-style: hidden;
-    background-color: #00121a67;
+    background-color: #00121a92;
     border-radius: 10px;
     /*Remove all the outside
     borders of the existing table*/
@@ -88,7 +97,7 @@ input {
 
 }
 
-button {
+#check {
     margin-top: 3vh;
     height: 7vh;
     width: 25vw;
@@ -112,11 +121,23 @@ button {
 
 
 @media screen and (max-width: 1000px) {
+    body{
+        justify-content: center;
+        align-items: center;
+    }
     #part-2 {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-  
+        width: 100%;
+    }
+
+    #table{
+        width: 80%;
+        overflow-x: scroll;
+        justify-content: left;
+
     }
 
     #form {
@@ -126,6 +147,14 @@ button {
     input{
         width: 50vw;
         font-size: 3rem;
+    }
+
+    table{
+        position: relative;
+
+    }
+    table td{
+        font-size: 12px;
     }
 
   

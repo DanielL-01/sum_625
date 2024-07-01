@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var seconds = 0
     var minutes = 0
     var hours = 0
+    var attempts = 0 
 
     
 
@@ -50,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelector("input").addEventListener("keypress", function(event){
         if (event.key == 'Enter'){
-            document.querySelector("button").click()
+            document.querySelector("#check").click()
 
         }
     })
     
-    document.querySelector("button").onclick = () => {
+    document.querySelector("#check").onclick = () => {
     if (document.querySelector("input").value != ""){
         if (document.querySelector("input").value == sum){
             if(minutes < 5){
@@ -71,8 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
         else {
+            attempts += 1
             document.getElementById("result").innerHTML = "SALAH"
             document.getElementById("result").style.color = "red"
+            if (attempts == 3){
+
+            }
         }   
 
         document.querySelector("input").value = ""

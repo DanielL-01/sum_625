@@ -15,6 +15,15 @@
     </div>
     <div id="part-2">
         <div id="table">
+            <div id="intro">
+                <h1>Sebelum Bermain</h1>
+                <h2>Ada 625 bilangan yang harus dijumlahkan</h2>
+                <h2>Jangan lupa untuk scroll ke kanan <br> bagi user yang menggunakan layar kecil</h2>
+                <h2>Enjoy the game <br>Have fun</h2>
+                <h2>Terima Kasih untuk mencoba</h2>
+                <button id="start">start</button>
+            </div>
+            
             <table >
                 <tr>
                   <td id="row-1-col-1"></td>
@@ -697,9 +706,11 @@
     
           
           <div id="form">
-            <input type="text" placeholder="Answer...">
-            <button onclick="check_answer()" id="check">Check</button>
+            <input type="text" placeholder="Answer..." disabled>
+            <button onclick="check_answer()" id="check" disabled>Check</button>
             <h1 id="result"></h1>
+            <button id="menyerah" >Menyerah?</button>
+            <button id="lagi" >Lagi?</button>
             
           </div>
 

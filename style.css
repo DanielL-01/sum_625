@@ -10,6 +10,7 @@ body{
     background-repeat: repeat;
     background-size: cover;
     background-color: #013c58;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #part-1{
@@ -47,21 +48,54 @@ body{
 }
 
 #table{
+    width: 610px;
+    height: 650px;
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: #f5a201 1px solid;
+    border-radius: 20px;
+}
+
+#intro{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+#start{
+    position: absolute;
+    bottom: 50px;
+    width: 25%;
+    background-color: #f5a201;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    font-weight: 700;
+    border: 5px solid #f5a201;
+    border-radius: 3vh;
+
+}
+#start:hover{
+    background-color: #ffba42;
+    border-color: #ffba42;
+    transition-duration: 500ms;
 }
 
 table {
+    display: none;
     border-collapse: collapse;
     border-style: hidden;
-    background-color: #00121a92;
-    border-radius: 10px;
     /*Remove all the outside
     borders of the existing table*/
 }
 table td {
+    border-collapse: collapse;
     padding: 0.3rem 0.5rem;
     text-align: center;
     border: 1px #ffba42;
@@ -110,6 +144,12 @@ input {
     border-radius: 3vh;
 }
 
+#check:hover{
+    background-color: #ffba42;
+    border-color: #ffba42;
+    transition-duration: 500ms;
+}
+
 #result{
     display: flex;
     margin-top: 10vh;
@@ -117,7 +157,39 @@ input {
     text-align: center;
     justify-content: center;
     font-size: 3rem;
+    margin-bottom: 0.5vh;
 }
+
+#menyerah {
+    display: none;
+    position: relative;
+    margin-top: 0.5vh;
+    height: 5vh;
+    width: 15vw;
+    background-color: #f5a201;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    font-weight: 700;
+    border: 5px solid #f5a201;
+    border-radius: 3vh;
+}
+
+#lagi {
+    display: none;
+    position: relative;
+    margin-top: 0.5vh;
+    height: 5vh;
+    width: 15vw;
+    background-color: #f5a201;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    font-weight: 700;
+    border: 5px solid #f5a201;
+    border-radius: 3vh;
+}
+
 
 
 @media screen and (max-width: 1000px) {
@@ -136,7 +208,7 @@ input {
     #table{
         width: 80%;
         overflow-x: scroll;
-        justify-content: left;
+        justify-content: center;
 
     }
 
@@ -160,4 +232,13 @@ input {
   
 
   
+}
+
+@media screen and (max-width: 600px) {
+    #table{
+        width: 80%;
+        overflow-x: scroll;
+        justify-content: left;
+
+    }
 }

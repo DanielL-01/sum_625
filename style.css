@@ -69,9 +69,7 @@ body{
     margin-top: 50px;
 }
 #start{
-    position: absolute;
-    bottom: 50px;
-    width: 25%;
+    width: 50%;
     background-color: #f5a201;
     color: white;
     font-family: Arial, Helvetica, sans-serif;

@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     var numbers =[]
 
     
-    console.log(seconds)
 
     document.getElementById("start").onclick = ()=>{
         document.querySelector("table").style.display = "block"
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             sum = sum + numbers[i][n]
         }
     }
-    console.log(sum)
+
 
     
     if (localStorage.getItem("start") == "yes"){
